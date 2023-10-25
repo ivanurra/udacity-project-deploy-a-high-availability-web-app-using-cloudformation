@@ -59,11 +59,11 @@ Resources:
           cd /var/www/html
           aws s3 cp s3://018793720981-udagram/index.html . 
           aws s3 cp s3://018793720981-udagram/styles.css .         
-      ImageId: ami-053b0d53c279acc90
+      ImageId: ami-0fc5d935ebf8bc3bc
       IamInstanceProfile: !Ref S3BucketsInstanceProfile
       SecurityGroups:
       - Ref: WebServerSecGroup
-      InstanceType: t3.medium
+      InstanceType: t2.micro
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
         Ebs:
