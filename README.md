@@ -8,23 +8,23 @@
 ### Creating Network Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./create.sh udagram-Network network.yml network-parameters.json
+./create.sh udagram-network network.yml network-parameters.json
 ```
 
 ### Updating Network Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./update.sh udagram-Network network.yml network-parameters.json
+./update.sh udagram-network network.yml network-parameters.json
 ```
 
 ### Creating Server Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./create.sh udagram-Servers udagram.yml udagram-parameters.json
+./create.sh udagram-servers udagram.yml udagram-parameters.json
 ```
 
 ### Updating Server Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./update.sh udagram-Servers udagram.yml udagram-parameters.json
+./update.sh udagram-servers udagram.yml udagram-parameters.json
 ```

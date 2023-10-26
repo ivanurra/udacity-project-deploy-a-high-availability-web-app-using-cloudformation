@@ -1,6 +1,7 @@
----
-Parameters:
+Description:
+    This template deploys the server stack.
 
+Parameters:
   EnvironmentName:
       Description: An environment name that will be prefixed to resource names
       Type: String
@@ -57,8 +58,7 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service
           cd /var/www/html
-          aws s3 cp s3://018793720981-udagram/index.html . 
-          aws s3 cp s3://018793720981-udagram/styles.css .         
+          aws s3 cp s3://udagram-app-ivanurra/index.html .       
       ImageId: ami-0fc5d935ebf8bc3bc
       IamInstanceProfile: !Ref S3BucketsInstanceProfile
       SecurityGroups:
