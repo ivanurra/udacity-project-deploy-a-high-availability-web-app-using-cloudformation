@@ -4,17 +4,11 @@
 
 ![Architecture](./infrastructure-diagram.jpeg)
 
-## Setup Instructions
+## Spin up instructions
 ### Creating Network Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
 ./create.sh udagram-network network.yml network-parameters.json
-```
-
-### Updating Network Stack
-```
-cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./update.sh udagram-network network.yml network-parameters.json
 ```
 
 ### Creating Server Stack
@@ -23,8 +17,21 @@ cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
 ./create.sh udagram-servers udagram.yml udagram-parameters.json
 ```
 
-### Updating Server Stack
+## Tear down instructions
+### Delete Network Stack
 ```
 cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
-./update.sh udagram-servers udagram.yml udagram-parameters.json
+./delete.sh udagram-network network.yml network-parameters.json
 ```
+
+### Delete Server Stack
+```
+cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
+./delete.sh udagram-servers udagram.yml udagram-parameters.json
+```
+
+## Other considerations
+- Access public url for web application from Application Load Balancer: http://udagra-webap-xwdxcivpk7sx-898036819.us-east-1.elb.amazonaws.com/
+
+
+![PublicURL](./public-url-view.png)
