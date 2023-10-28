@@ -1,8 +1,7 @@
 ## Udacity Cloud DevOps Engineer: High availability web app using CloudFormation
-### CD12352 - Infrastructure as Code Project Solution by Iván Urra
+## CD12352 - Infrastructure as Code Project Solution - Iván Urra
 
 ## Infrastructure Diagram
-
 
 ![Infrastructure Diagram](./infrastructure-diagram.jpeg)
 
@@ -38,6 +37,5 @@ cd udacity-project-deploy-a-high-availability-web-app-using-cloudformation
 ## Other considerations
 - Access public url for web application from Application Load Balancer: 
 http://udagra-webap-xwdxcivpk7sx-898036819.us-east-1.elb.amazonaws.com/
-
 
 ![PublicURL](./public-url-view.png)
